@@ -1123,23 +1123,13 @@ body::after {
 .item-price__table table {
   width: 100%
 }
-.item-price__table thead {
-  position: relative
-}
-.item-price__table thead::before {
-  content: "";
-  position: absolute;
+.item-price__table .after-header .border {
+  transition: all 2s ease-in-out;
+  height: 1px;
   width: 0;
-  height: .0625rem;
-  bottom: 0;
-  left: 0;
-  border-bottom: 1px solid #000;
-  transition: width 2s ease-in-out
+  background-color: var(--primary)
 }
-._watcher-view .item-price__table thead {
-  position: relative
-}
-._watcher-view .item-price__table thead::before {
+._watcher-view .item-price__table .after-header .border {
   width: 100%
 }
 .item-price__table th {
@@ -2224,6 +2214,9 @@ body::after {
   position: absolute!important;
   width: 1px!important;
   white-space: nowrap!important
+}
+.ts-dropdown [data-value=""] {
+  display: none
 }
 /*!
 * animate.css - https://animate.style/

@@ -7711,7 +7711,7 @@
         da.init();
         var tom_select_complete = __webpack_require__(371);
         document.querySelectorAll(".select").forEach((el => {
-            new tom_select_complete(el, {
+            const select = new tom_select_complete(el, {
                 create: true,
                 sortField: {
                     field: "text",
@@ -7721,6 +7721,9 @@
                 allowEmptyOption: true,
                 controlInput: null
             });
+            select.on("initialize", (() => {
+                select.removeOption("");
+            }));
         }));
         var wow = __webpack_require__(713);
         let wow_wow = new wow({
