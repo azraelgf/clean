@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241116131627">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,6 +42,7 @@
 											<li><a href="#">Дезинфекция помещений</a></li>
 											<li><a href="#">Уборка прилегающей территории</a></li>
 											<li><a href="#">Вывоз мусора</a></li>
+											<li><a href="">Разовый клининг</a></li>
 										</ul>
 									</li>
 									<li>
@@ -58,8 +59,11 @@
 											<li><a href="#">Клининг вокзалов, аэропортов, самолетов, поездов</a></li>
 											<li><a href="#">Клининг объектов сегмента HoReCa</a></li>
 											<li><a href="#">Уборка в жилых комплексах комфорт и бизнес-класса</a></li>
+											<li><a href="#">Клининг подземных паркингов</a></li>
+											<li><a href="">Все ежедневные услуги</a></li>
 										</ul>
 									</li>
+									<li><a href="">Все услуги</a></li>
 								</ul>
 							</li>
 							<li class="menu__item"><a href="#" class="menu__link">цены</a></li>
@@ -96,7 +100,8 @@
 						</div>
 						<div class="content-hero">
 							<div class="content-hero__info">
-								<h1 class="content-hero__title  title wow animate__fadeIn title_h1">Делаем немецкое качество уборки доступным в&nbsp;России</h1>
+								<h1 class="content-hero__title  title wow animate__fadeIn title_h1">Делаем немецкое качество
+									уборки доступным в&nbsp;России</h1>
 								<div class="content-hero__block">
 									<button class="button" data-popup="#call" type="button">Получить консультацию</button>
 								</div>
@@ -120,7 +125,7 @@
 						</div>
 						<div class="detail-hero__item detail-hero__figure">
 							<div class="figure hover-btn">
-								<a class="stretched-link" href=""></a>
+								<a class="stretched-link" href="#" data-popup="#popup-pdf"></a>
 								<picture>
 									<source media="(min-width: 480px)" srcset="img/hero-figure.svg">
 									<img src="img/hero-figure_m.svg" alt="Image" class="figure__bg">
@@ -435,18 +440,6 @@
 								<div class="item"><img src="img/partners/02/minvodi.webp" alt="Image"></div>
 								<div class="item item_small"><img src="img/partners/02/rodnik.webp" alt="Image"></div>
 								<div class="item"><img src="img/partners/02/rgd.webp" alt="Image"></div>
-
-								<div class="item item_small"><img src="img/partners/03/damate.webp" alt="Image"></div>
-								<div class="item"><img src="img/partners/03/masuk.webp" alt="Image"></div>
-								<div class="item item_small"><img src="img/partners/03/rosatom.webp" alt="Image"></div>
-								<div class="item"><img src="img/partners/03/supermarket.webp" alt="Image"></div>
-								<div class="item"><img src="img/partners/03/log.webp" alt="Image"></div>
-
-								<div class="item"><img src="img/partners/04/01.webp" alt="Image"></div>
-								<div class="item item_small"><img src="img/partners/04/02.webp" alt="Image"></div>
-								<div class="item item_small"><img src="img/partners/04/03.webp" alt="Image"></div>
-								<div class="item"><img src="img/partners/04/04.webp" alt="Image"></div>
-								<div class="item"><img src="img/partners/04/05.webp" alt="Image"></div>
 							</div>
 							<div aria-hidden="true" class="items marquee">
 								<div class="item"><img src="img/partners/01/odk.webp" alt="Image"></div>
@@ -460,7 +453,24 @@
 								<div class="item"><img src="img/partners/02/minvodi.webp" alt="Image"></div>
 								<div class="item item_small"><img src="img/partners/02/rodnik.webp" alt="Image"></div>
 								<div class="item"><img src="img/partners/02/rgd.webp" alt="Image"></div>
+							</div>
+						</div>
+						<div class="items-wrap">
+							<div class="items marquee reverce">
+								<div class="item item_small"><img src="img/partners/03/damate.webp" alt="Image"></div>
+								<div class="item"><img src="img/partners/03/masuk.webp" alt="Image"></div>
+								<div class="item item_small"><img src="img/partners/03/rosatom.webp" alt="Image"></div>
+								<div class="item"><img src="img/partners/03/supermarket.webp" alt="Image"></div>
+								<div class="item"><img src="img/partners/03/log.webp" alt="Image"></div>
 
+								<div class="item"><img src="img/partners/04/01.webp" alt="Image"></div>
+								<div class="item item_small"><img src="img/partners/04/02.webp" alt="Image"></div>
+								<div class="item item_small"><img src="img/partners/04/03.webp" alt="Image"></div>
+								<div class="item"><img src="img/partners/04/04.webp" alt="Image"></div>
+								<div class="item"><img src="img/partners/04/05.webp" alt="Image"></div>
+
+							</div>
+							<div aria-hidden="true" class="items marquee reverce">
 								<div class="item item_small"><img src="img/partners/03/damate.webp" alt="Image"></div>
 								<div class="item"><img src="img/partners/03/masuk.webp" alt="Image"></div>
 								<div class="item item_small"><img src="img/partners/03/rosatom.webp" alt="Image"></div>
@@ -475,9 +485,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="partners__action">
-						<a href="" class="button button_outline">Посмотреть отзывы</a>
-					</div>
+					<!--                <div class="partners__action">-->
+					<!--                    <a href="" class="button button_outline">Посмотреть отзывы</a>-->
+					<!--                </div>-->
 				</div>
 			</section>
 			<section class="price-main section-padding">
@@ -934,8 +944,20 @@
 								</div>
 								<div class="form__row">
 									<div class="form__column">
-										<label for="type" class="form__label">Тип помещения</label>
-										<input class="input" id="type" autocomplete="off" type="text" placeholder="">
+										<label class="form__label">Тип помещения</label>
+										<select class="select" autocomplete="off">
+											<option value="">Выберите...</option>
+											<option value="1">Производство</option>
+											<option value="2">Завод</option>
+											<option value="3">Офис </option>
+											<option value="4">Образование </option>
+											<option value="5">Атосалоны</option>
+											<option value="6">Медицина </option>
+											<option value="7">Отель/ресторан</option>
+											<option value="8">Жильё</option>
+											<option value="9">Паркинг</option>
+											<option value="10">Территория</option>
+										</select>
 									</div>
 									<div class="form__column">
 										<label for="name" class="form__label">Имя</label>
@@ -944,8 +966,12 @@
 								</div>
 								<div class="form__row">
 									<div class="form__column">
-										<label for="kind" class="form__label">Вид клининга</label>
-										<input class="input" id="kind" autocomplete="off" type="text" placeholder="">
+										<label class="form__label">Вид клининга</label>
+										<select class="select">
+											<option value="">Выберите...</option>
+											<option value="1">Разовый клининг </option>
+											<option value="2">Ежедневный клининг</option>
+										</select>
 									</div>
 									<div class="form__column">
 										<label for="address" class="form__label">Адрес</label>
@@ -1007,7 +1033,10 @@
 
 
 						</div>
-						<div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.by/maps/213/moscow/house/rochdelskaya_ulitsa_15s21/Z04YcwFiQUcHQFtvfXt0dH9kZw==/?ll=37.572252%2C55.754962&utm_medium=mapframe&utm_source=maps&z=14.26" style="color:#eee;font-size:12px;position:absolute;top:14px;">Рочдельская улица, 15с21 — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=37.572252%2C55.754962&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcxNzA2MBJF0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCg0L7Rh9C00LXQu9GM0YHQutCw0Y8g0YPQu9C40YbQsCwgMTXRgTIxIgoNVEAWQhWABV9C&z=14.26" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+						<div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.by/maps/213/moscow/house/rochdelskaya_ulitsa_15s21/Z04YcwFiQUcHQFtvfXt0dH9kZw==/?ll=37.572252%2C55.754962&utm_medium=mapframe&utm_source=maps&z=14.26" style="color:#eee;font-size:12px;position:absolute;top:14px;">Рочдельская улица, 15с21 —
+								Яндекс Карты</a>
+							<iframe src="https://yandex.by/map-widget/v1/?ll=37.572252%2C55.754962&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcxNzA2MBJF0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCg0L7Rh9C00LXQu9GM0YHQutCw0Y8g0YPQu9C40YbQsCwgMTXRgTIxIgoNVEAWQhWABV9C&z=14.26" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1046,7 +1075,7 @@
 						</div>
 					</div>
 					<div class="footer__bottom">
-						@ Все права защищены
+						© 2024 Все права защищены
 						<a href="/" class="footer__logo logo" data-da=".footer__col:first-child, 767.98,first"><img src="img/logo_f.svg" alt="Logo"></a>
 						<a href="">Политика конфиденциальности</a>
 					</div>
@@ -1092,7 +1121,23 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js"></script>
+	<div id="popup-pdf" aria-hidden="true" class="popup popup_pdf">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="1" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+						<path opacity="1" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+					</svg>
+				</button>
+				<div class="popup__text">
+					<iframe src="files/01.pdf" width="100%" height="600px"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20241116131627"></script>
 </body>
 
 </html>

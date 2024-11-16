@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241116131627">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,6 +42,7 @@
 											<li><a href="#">Дезинфекция помещений</a></li>
 											<li><a href="#">Уборка прилегающей территории</a></li>
 											<li><a href="#">Вывоз мусора</a></li>
+											<li><a href="">Разовый клининг</a></li>
 										</ul>
 									</li>
 									<li>
@@ -58,8 +59,11 @@
 											<li><a href="#">Клининг вокзалов, аэропортов, самолетов, поездов</a></li>
 											<li><a href="#">Клининг объектов сегмента HoReCa</a></li>
 											<li><a href="#">Уборка в жилых комплексах комфорт и бизнес-класса</a></li>
+											<li><a href="#">Клининг подземных паркингов</a></li>
+											<li><a href="">Все ежедневные услуги</a></li>
 										</ul>
 									</li>
+									<li><a href="">Все услуги</a></li>
 								</ul>
 							</li>
 							<li class="menu__item"><a href="#" class="menu__link">цены</a></li>
@@ -286,7 +290,7 @@
 							<small>* Стоимость услуг актуальна для уборки жилой недвижимости</small>
 						</div>
 						<div class="item-price">
-							<div class="about-beige _btn-mobile">
+							<div class="about-beige _btn-mobile _flex-start">
 								<div class="about-beige__img">
 									<img class="ibg" src="img/price/visotnie_raboti.webp" alt="Image">
 								</div>
@@ -374,7 +378,8 @@
 										Клининг гостиниц, отелей, хостелов
 									</div>
 									<div class="about-beige__text">Стоимость зависит от&nbsp;индивидуальных особенностей
-										объекта и&nbsp;выбранных видов услуг. Необходим выезд эксперта для оценки (бесплатно)
+										объекта и&nbsp;выбранных видов услуг. Необходим выезд эксперта для оценки
+										(бесплатно)
 									</div>
 								</div>
 								<div class="block-column__bottom">
@@ -385,7 +390,6 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</section>
 			<section class="feedback section-padding">
@@ -409,8 +413,20 @@
 								</div>
 								<div class="form__row">
 									<div class="form__column">
-										<label for="type" class="form__label">Тип помещения</label>
-										<input class="input" id="type" autocomplete="off" type="text" placeholder="">
+										<label class="form__label">Тип помещения</label>
+										<select class="select" autocomplete="off">
+											<option value="">Выберите...</option>
+											<option value="1">Производство</option>
+											<option value="2">Завод</option>
+											<option value="3">Офис</option>
+											<option value="4">Образование</option>
+											<option value="5">Атосалоны</option>
+											<option value="6">Медицина</option>
+											<option value="7">Отель/ресторан</option>
+											<option value="8">Жильё</option>
+											<option value="9">Паркинг</option>
+											<option value="10">Территория</option>
+										</select>
 									</div>
 									<div class="form__column">
 										<label for="name" class="form__label">Имя</label>
@@ -419,8 +435,12 @@
 								</div>
 								<div class="form__row">
 									<div class="form__column">
-										<label for="kind" class="form__label">Вид клининга</label>
-										<input class="input" id="kind" autocomplete="off" type="text" placeholder="">
+										<label class="form__label">Вид клининга</label>
+										<select class="select">
+											<option value="">Выберите...</option>
+											<option value="1">Разовый клининг</option>
+											<option value="2">Ежедневный клининг</option>
+										</select>
 									</div>
 									<div class="form__column">
 										<label for="address" class="form__label">Адрес</label>
@@ -524,7 +544,7 @@
 						</div>
 					</div>
 					<div class="footer__bottom">
-						@ Все права защищены
+						© 2024 Все права защищены
 						<a href="/" class="footer__logo logo" data-da=".footer__col:first-child, 767.98,first"><img src="img/logo_f.svg" alt="Logo"></a>
 						<a href="">Политика конфиденциальности</a>
 					</div>
@@ -570,7 +590,7 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js"></script>
+	<script src="js/app.min.js?_v=20241116131627"></script>
 </body>
 
 </html>
